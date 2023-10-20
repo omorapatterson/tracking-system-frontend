@@ -6,7 +6,7 @@ import '../../assets/css/TrackingParcel.css'
 
 export default function TrackingParcelItemsPage (props) {
 
-    const [data, setData] = useState('');;
+    const [data, setData] = useState('');
 
     useEffect(() => {
         setData(props.data);

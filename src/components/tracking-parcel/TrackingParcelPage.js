@@ -23,7 +23,7 @@ export default function TrackingParcelPage () {
         trackingPackage(trackingNumber);
     }
 
-    function handleLogin(event) {
+    function handleLogin() {
         navigate("/login");
     }
 
@@ -72,11 +72,9 @@ export default function TrackingParcelPage () {
                 </div>
             </div>
 
-
              <div className="display-flex justify-content-center">
                 <span color="red">{error ? "Tracking Number Does Not Exist" : ""}</span>
             </div>
-
 
         </div>
     )

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import axios from "axios";
 
 export default function AuthenticationPage () {
 
     const [userName, setUserName] = useState('');
+
     const [password, setPassword] = useState('');
+
     const [jwtToken, setJwtToken] = useState('');
 
     const navigate = useNavigate();
